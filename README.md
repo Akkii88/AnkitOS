@@ -2,14 +2,14 @@
 
 Interactive portfolio experience built as a desktop-like OS with boot/login phases, profile-based content (AI/ML vs Data Analyst), video wallpapers, draggable windows, and glassmorphism UI.
 
-![Boot Screen](PortScreenShots/1)
-![Login Screen](PortScreenShots/2)
-![Desktop - AI/ML](PortScreenShots/3)
-![Desktop - Icons](PortScreenShots/4)
-![Applications](PortScreenShots/5)
-![Windows](PortScreenShots/6)
-![AI Assistant](PortScreenShots/7)
-![Taskbar](PortScreenShots/8)
+![Boot Screen](PortScreenShots/1.png)
+![Login Screen](PortScreenShots/2.png)
+![Desktop - AI/ML](PortScreenShots/3.png)
+![Desktop - Icons](PortScreenShots/4.png)
+![Applications](PortScreenShots/5.png)
+![Windows](PortScreenShots/6.png)
+![AI Assistant](PortScreenShots/7.png)
+![Taskbar](PortScreenShots/8.png)
 
 ## Features
 
