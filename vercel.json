@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "buildCommand": "pnpm --filter @workspace/ankitos run build && rm -rf public && mkdir -p public/assets && cp -r artifacts/ankitos/dist/public/* public/",
+  "buildCommand": "pnpm --filter @workspace/ankitos run build && rm -rf public && mkdir -p public && cp -r artifacts/ankitos/public/* public/ && cp -r artifacts/ankitos/dist/public/* public/",
   "outputDirectory": "public",
   "installCommand": "pnpm install",
   "build": {
