@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323:wght@400&family=Nunito:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+@import "tw-animate-css";
+@plugin "@tailwindcss/typography";
+
+@theme inline {
+  --font-sans: "Nunito", sans-serif;
+  --font-mono: "VT323", monospace;
+  --font-display: "Press Start 2P", system-ui;
+}
+
+:root {
+  --background: 34 100% 96%; /* #FFF8EE */
+  --foreground: 25 32% 19%; /* #3D2B1F */
+  --border: 40 56% 80%; /* #E8D5B0 */
+  
+  --card: 48 100% 98%; /* #FFFDF7 */
+  --card-foreground: 25 32% 19%; 
+  --card-border: 40 56% 80%;
+
+  --sidebar: 34 100% 96%;
+  --sidebar-foreground: 25 32% 19%;
+  --sidebar-border: 40 56% 80%;
+  --sidebar-primary: 28 80% 54%;
+  --sidebar-primary-foreground: 0 0% 100%;
+  --sidebar-accent: 28 80% 54%;
+  --sidebar-accent-foreground: 0 0% 100%;
+  --sidebar-ring: 28 80% 54%;
+
+  --popover: 48 100% 98%;
+  --popover-foreground: 25 32% 19%;
+  --popover-border: 40 56% 80%;
+
+  --primary: 28 80% 54%; /* #E8832A */
+  --primary-foreground: 0 0% 100%;
+
+  --secondary: 40 56% 80%;
+  --secondary-foreground: 25 32% 19%;
+
+  --muted: 40 56% 80%;
+  --muted-foreground: 35 32% 41%; /* #8B6F47 */
+
+  --accent: 28 80% 54%;
+  --accent-foreground: 0 0% 100%;
+
+  --destructive: 0 100% 66%;
+  --destructive-foreground: 0 0% 100%;
+
+  --input: 40 56% 80%;
+  --ring: 28 80% 54%;
+}
+
+@layer base {
+  * {
+    border-color: hsl(var(--border));
+  }
+  body {
+    @apply font-sans antialiased;
+    background-color: hsl(var(--background));
+    color: hsl(var(--foreground));
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+  }
+}
+
+/* AnkitOS custom overrides */
+.pixel-shadow {
+  box-shadow: 4px 4px 0px #C4A882;
+}
+
+.pixel-shadow-sm {
+  box-shadow: 2px 2px 0px #C4A882;
+}
+
+.pixeled-icon {
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.cursor-blink {
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes cloud-drift {
+  from { transform: translateX(0); }
+  to { transform: translateX(-100vw); }
+}
+
+@keyframes window-open {
+  from { transform: scale(0.8); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+.window-open-animation {
+  animation: window-open 0.15s ease-out forwards;
+}
+
+@keyframes jump {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+.minion-jump {
+  animation: jump 0.4s ease-in-out;
+}
+
+@keyframes success-bounce {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+}
+
+.success-bounce {
+  animation: success-bounce 0.4s ease-in-out;
+}

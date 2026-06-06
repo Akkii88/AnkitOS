@@ -1,0 +1,31 @@
+kind = "web"
+previewPath = "/"
+title = "AnkitOS"
+version = "1.0.0"
+id = "artifacts/ankitos"
+router = "path"
+
+[[integratedSkills]]
+name = "react-vite"
+version = "1.0.0"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 20934
+
+[services.development]
+run = "pnpm --filter @workspace/ankitos run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/ankitos", "run", "build" ]
+publicDir = "artifacts/ankitos/dist/public"
+serve = "static"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "20934"
+BASE_PATH = "/"
