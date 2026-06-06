@@ -3,5 +3,5 @@
   "buildCommand": "pnpm --filter @workspace/ankitos run build",
   "outputDirectory": "artifacts/ankitos/dist/public",
   "installCommand": "pnpm install",
-  "rootDirectory": "."
+  "zeroConfig": true
 }
