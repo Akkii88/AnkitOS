@@ -1,13 +1,12 @@
 {
   "version": 2,
-  "buildCommand": "cd artifacts/ankitos && pnpm run build",
-  "outputDirectory": "artifacts/ankitos/dist/public",
+  "buildCommand": "pnpm --filter @workspace/ankitos run build && rm -rf public && cp -r artifacts/ankitos/dist/public public",
+  "outputDirectory": "public",
   "installCommand": "pnpm install",
   "build": {
     "env": {
       "PORT": "5173",
       "BASE_PATH": "/"
     }
-  },
-  "routes": [{ "handle": "filesystem" }]
+  }
 }
