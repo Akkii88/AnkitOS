@@ -6,10 +6,7 @@
   "build": {
     "env": {
       "PORT": "5173",
-      "BASE_PATH": "/",
-      "VERCEL": "1"
+      "BASE_PATH": "/"
     }
-  },
-  "cleanUrls": true,
-  "trailingSlash": false
+  }
 }
