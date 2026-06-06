@@ -10,6 +10,7 @@ Interactive portfolio experience built as a desktop-like OS with boot/login phas
 ![Windows](PortScreenShots/6.png)
 ![AI Assistant](PortScreenShots/7.png)
 ![Taskbar](PortScreenShots/8.png)
+![Resume](PortScreenShots/9.png)
 
 ## Features
 
