@@ -9,5 +9,7 @@
       "BASE_PATH": "/",
       "VERCEL": "1"
     }
-  }
+  },
+  "cleanUrls": true,
+  "trailingSlash": false
 }
