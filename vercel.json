@@ -1,7 +1,6 @@
 {
   "version": 2,
-  "buildCommand": "pnpm --filter @workspace/ankitos run build",
-  "outputDirectory": "artifacts/ankitos/dist/public",
-  "installCommand": "pnpm install",
-  "zeroConfig": true
+  "buildCommand": "pnpm --filter @workspace/ankitos run build && cp -r artifacts/ankitos/dist/public public",
+  "outputDirectory": "public",
+  "installCommand": "pnpm install"
 }
